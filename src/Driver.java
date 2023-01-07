@@ -1,5 +1,5 @@
 
-/*public abstract class Driver<T extends Car> {
+public abstract class Driver<T extends Car> {
     private final String fullName;
     private final String category;
     private final int drivingExperience;
@@ -13,12 +13,27 @@
     }
 
     public void startMovement(){
-        System.out.println("Driver %s started moving", this.fullName);
+        System.out.println("Начал движение");
+        System.out.println(this.fullName);
         this.car.startMovement();
     }
     public void stopMovement(){
-        System.out.println("Driver %s stopped moving", this.fullName);
+        System.out.println("Остановился");
+        System.out.println(this.fullName);
         this.car.stopMovement();
     }
+    public void relife(){
+        System.out.println("Запрваил авто");
+        System.out.println(this.fullName);
+    }
 
-}*/
+    @Override
+    public String toString() {
+        return "Driver{" +
+                "fullName='" + fullName + '\'' +
+                ", category='" + category + '\'' +
+                ", drivingExperience=" + drivingExperience +
+                ", car=" + car +
+                '}';
+    }
+}
