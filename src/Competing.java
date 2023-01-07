@@ -1,6 +1,6 @@
 
 public interface Competing {
-    void pitStop();
+    int pitStop();
     int getBestLapTime();
     int getMaxSpeed();
 }
