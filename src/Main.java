@@ -24,5 +24,28 @@ public class Main {
         System.out.println(carr2);
         System.out.println(carr3);
 
+        System.out.println(bus2.getBestLapTime());
+        System.out.println(bus1.getBestLapTime());
+        System.out.println(bus3.getBestLapTime());
+
+        System.out.println(car1.getMaxSpeed());
+        System.out.println(car2.getMaxSpeed());
+        System.out.println(car3.getMaxSpeed());
+
+        System.out.println(carr1.pitStop());
+        System.out.println(carr2.pitStop());
+        System.out.println(carr3.pitStop());
+
+        Driver<PassengerCars> driver1=new Driver<>("Пётр Сергеевич","B",34, car1);
+        Driver driver2=new Driver("Пётр Сергеевич1","D",30, bus1);
+        Driver driver3=new Driver("Пётр Сергеевич2","C",26,  carr1);
+
+
+        System.out.println(driver1);
+
+
+
+
+
     }
 }
