@@ -1,5 +1,5 @@
 
-public abstract class Driver<T extends Car> {
+public class Driver<T extends Car> {
     private final String fullName;
     private final String category;
     private final int drivingExperience;
