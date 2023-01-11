@@ -21,6 +21,7 @@ public abstract class Car {
     }
     public abstract void startMovement();
     public abstract void stopMovement();
+    public abstract void printType();
     @Override
     public String toString(){
         return "бренд и модель:"+getBrend()+"  "+getModel()+"  двигатель  "+getEngineCapacity();

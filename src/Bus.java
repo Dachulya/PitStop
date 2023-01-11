@@ -2,6 +2,8 @@ import static sun.swing.MenuItemLayoutHelper.max;
 
 public class Bus extends Car implements Competing{
 
+    private final PassengerCapacityBus passengerCapacityBus;
+
     public static int[] SPISOK={13,34,2,1,45,67,8};
 
     @Override
@@ -23,8 +25,9 @@ public class Bus extends Car implements Competing{
         return randomNum;
     }
 
-    public Bus(String brend, String model, float engineCapacity){
+    public Bus(String brend, String model, float engineCapacity,PassengerCapacityBus passengerCapacityBus){
         super(brend,model,engineCapacity);
+        this.passengerCapacityBus=passengerCapacityBus;
     }
     @Override
     public void startMovement(){
@@ -35,4 +38,12 @@ public class Bus extends Car implements Competing{
         System.out.println("Остановиться");
     }
 
+    @Override
+    public void printType() {
+        System.out.println(passengerCapacityBus);
+    }
+
+    public String toString(){
+        return "бренд и модель:"+getBrend()+"  "+getModel()+"  двигатель  "+getEngineCapacity()+passengerCapacityBus;
+    }
 }

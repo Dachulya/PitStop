@@ -2,6 +2,7 @@ import static sun.swing.MenuItemLayoutHelper.max;
 
 public class PassengerCars extends Car implements Competing{
     public static int[] SPISOK={13,34,2,1,45,67,8};
+    private final BodyType bodyType;
 
     @Override
     public int pitStop() {
@@ -22,8 +23,9 @@ public class PassengerCars extends Car implements Competing{
         return randomNummm;
     }
 
-    public PassengerCars(String brend, String model, float engineCapacity){
+    public PassengerCars(String brend, String model, float engineCapacity,BodyType bodyType){
         super(brend,model,engineCapacity);
+        this.bodyType=bodyType;
     }
     @Override
     public void startMovement(){
@@ -32,5 +34,14 @@ public class PassengerCars extends Car implements Competing{
     @Override
     public void stopMovement(){
         System.out.println("Остановиться");
+    }
+
+    @Override
+    public void printType() {
+        System.out.println(bodyType);
+
+    }
+    public String toString(){
+        return "бренд и модель:"+getBrend()+"  "+getModel()+"  двигатель  "+getEngineCapacity()+bodyType;
     }
 }
