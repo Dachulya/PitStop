@@ -41,6 +41,7 @@ public class HeavyCar extends Car implements Competing{
     public void printType() {
         System.out.println(carriageCapacity);
 
+
     }
     public String toString(){
         return "бренд и модель:"+getBrend()+"  "+getModel()+"  двигатель  "+getEngineCapacity()+carriageCapacity;

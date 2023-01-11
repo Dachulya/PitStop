@@ -5,6 +5,7 @@ public enum PassengerCapacityBus {
     L(60,80),
     XL(100,120);
 
+
     private final int capacityFrom;
     private final int capacityTo;
 

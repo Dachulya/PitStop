@@ -38,6 +38,7 @@ public class PassengerCars extends Car implements Competing{
 
     @Override
     public void printType() {
+
         System.out.println(bodyType);
 
     }

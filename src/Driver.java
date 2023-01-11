@@ -17,11 +17,13 @@ public class Driver<T extends Car> {
         System.out.println(this.fullName);
         this.car.startMovement();
     }
+
     public void stopMovement(){
         System.out.println("Остановился");
         System.out.println(this.fullName);
         this.car.stopMovement();
     }
+
     public void relife(){
         System.out.println("Запрваил авто");
         System.out.println(this.fullName);

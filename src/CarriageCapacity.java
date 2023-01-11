@@ -7,6 +7,7 @@ public enum CarriageCapacity {
     private Float capacityFrom;
     private Float capacityTo;
 
+
     CarriageCapacity(Float capacityFrom, Float capacityTo) {
         this.capacityFrom = capacityFrom;
         this.capacityTo = capacityTo;

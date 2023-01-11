@@ -4,6 +4,7 @@ public class Main {
         Bus bus2=new Bus("skoda","p4",20.4f,PassengerCapacityBus.M);
         Bus bus3=new Bus("mersedes","o-24",23.0f,PassengerCapacityBus.L);
 
+
         PassengerCars car1=new PassengerCars("bmv","w-2",23.4f,BodyType.SEDAN);
         PassengerCars car2=new PassengerCars("skoda","rapid",12.4f,BodyType.VAN);
         PassengerCars car3=new PassengerCars("toyota","popo-24",28.0f,BodyType.MINIVAN);

@@ -9,6 +9,7 @@ public enum BodyType {
     VAN("ФУРГОН"),
     MINIVAN("МИНИВЭН");
 
+
     private final String name;
     BodyType(String name){
         this.name=name;
