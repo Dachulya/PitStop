@@ -37,12 +37,13 @@ public class Main {
         System.out.println(carr2.pitStop());
         System.out.println(carr3.pitStop());
 
-        Driver<PassengerCars> driver1=new Driver<>("Пётр Сергеевич","B",34, car1);
-        Driver driver2=new Driver("Пётр Сергеевич1","D",30, bus1);
-        Driver driver3=new Driver("Пётр Сергеевич2","C",26,  carr1);
+        DriverB driverB = new DriverB("Пётр Сергеевич", 34, car1);
+
+        Driver driver2=new DriverD("Пётр Сергеевич1",30, bus1);
+        Driver driver3=new DriverC("Пётр Сергеевич2",26,  carr1);
 
 
-        System.out.println(driver1);
+        System.out.println(driver2);
 
 
 

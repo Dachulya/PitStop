@@ -1,13 +1,13 @@
 
 public class Driver<T extends Car> {
     private final String fullName;
-    private final String category;
+
     private final int drivingExperience;
     private final T car;
 
-    protected Driver(String fullName,String category,int drivingExperience,T car){
+    protected Driver(String fullName,int drivingExperience,T car){
         this.fullName=fullName;
-        this.category=category;
+
         this.drivingExperience=drivingExperience;
         this.car=car;
     }
@@ -29,11 +29,23 @@ public class Driver<T extends Car> {
         System.out.println(this.fullName);
     }
 
+    public String getFullName() {
+        return fullName;
+    }
+
+    public int getDrivingExperience() {
+        return drivingExperience;
+    }
+
+    public T getCar() {
+        return car;
+    }
+
     @Override
     public String toString() {
         return "Driver{" +
                 "fullName='" + fullName + '\'' +
-                ", category='" + category + '\'' +
+                ", category='"  + '\'' +
                 ", drivingExperience=" + drivingExperience +
                 ", car=" + car +
                 '}';
