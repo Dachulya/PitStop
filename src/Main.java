@@ -5,15 +5,15 @@ public class Main {
         Bus bus3=new Bus("mersedes","o-24",23.0f,PassengerCapacityBus.L);
 
 
-        PassengerCars car1=new PassengerCars("bmv","w-2",23.4f,BodyType.SEDAN);
-        PassengerCars car2=new PassengerCars("skoda","rapid",12.4f,BodyType.VAN);
-        PassengerCars car3=new PassengerCars("toyota","popo-24",28.0f,BodyType.MINIVAN);
+        PassengerCars car1=new PassengerCars("bmv","w-2",23.4f,BodyType.SEDAN,true);
+        PassengerCars car2=new PassengerCars("skoda","rapid",12.4f,BodyType.VAN,false);
+        PassengerCars car3=new PassengerCars("toyota","popo-24",28.0f,BodyType.MINIVAN,false);
 
-        HeavyCar carr1=new HeavyCar("bmv","wue-234",23.4f,CarriageCapacity.N1);
-        HeavyCar carr2=new HeavyCar("skoda","antirapid",2.4f,CarriageCapacity.N3);
-        HeavyCar carr3=new HeavyCar("toyota","toto",18.0f,CarriageCapacity.N2);
+        HeavyCar carr1=new HeavyCar("bmv","wue-234",23.4f,CarriageCapacity.N1,true);
+        HeavyCar carr2=new HeavyCar("skoda","antirapid",2.4f,CarriageCapacity.N3,false);
+        HeavyCar carr3=new HeavyCar("toyota","toto",18.0f,CarriageCapacity.N2,true);
 
-        System.out.println(bus1);
+        /*System.out.println(bus1);
         System.out.println(bus2);
         System.out.println(bus3);
 
@@ -35,7 +35,7 @@ public class Main {
 
         System.out.println(carr1.pitStop());
         System.out.println(carr2.pitStop());
-        System.out.println(carr3.pitStop());
+        System.out.println(carr3.pitStop());*/
 
         DriverB driverB = new DriverB("Пётр Сергеевич", 34, car1);
 
@@ -44,6 +44,7 @@ public class Main {
 
 
         System.out.println(driver2);
+        System.out.println();
 
 
 

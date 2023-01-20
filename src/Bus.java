@@ -42,8 +42,13 @@ public class Bus extends Car implements Competing{
     public void printType() {
         System.out.println(passengerCapacityBus);
     }
-
+    @Override
+    public void goDiagostic() {
+        System.out.println("автобусу диагностика не требуется");
+    }
     public String toString(){
-        return "бренд и модель:"+getBrend()+"  "+getModel()+"  двигатель  "+getEngineCapacity()+passengerCapacityBus;
+
+        return "бренд и модель:"+getBrend()+"  "+getModel()+"  двигатель  "+getEngineCapacity()+passengerCapacityBus+
+                "автобусу диагностика не требуется";
     }
 }

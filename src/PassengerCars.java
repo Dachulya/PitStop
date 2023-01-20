@@ -3,7 +3,7 @@ import static sun.swing.MenuItemLayoutHelper.max;
 public class PassengerCars extends Car implements Competing{
     public static int[] SPISOK={13,34,2,1,45,67,8};
     private final BodyType bodyType;
-
+    private boolean diagnostic;
     @Override
     public int pitStop() {
         int randomNumm1 = (int)(Math.random()*10);
@@ -23,9 +23,10 @@ public class PassengerCars extends Car implements Competing{
         return randomNummm;
     }
 
-    public PassengerCars(String brend, String model, float engineCapacity,BodyType bodyType){
+    public PassengerCars(String brend, String model, float engineCapacity,BodyType bodyType, boolean diagnostic){
         super(brend,model,engineCapacity);
         this.bodyType=bodyType;
+        this.diagnostic=diagnostic;
     }
     @Override
     public void startMovement(){
@@ -37,12 +38,18 @@ public class PassengerCars extends Car implements Competing{
     }
 
     @Override
-    public void printType() {
+    public void printType(){}
 
-        System.out.println(bodyType);
-
+    @Override
+    public void goDiagostic() {
+        if (diagnostic=true){
+            System.out.println(diagnostic);}
+        else {
+            throw new RuntimeException();
+        }
     }
+
     public String toString(){
-        return "бренд и модель:"+getBrend()+"  "+getModel()+"  двигатель  "+getEngineCapacity()+bodyType;
+        return "бренд и модель:"+getBrend()+"  "+getModel()+"  двигатель  "+getEngineCapacity()+bodyType/*+goDiagostic()*/;
     }
 }
