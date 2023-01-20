@@ -1,24 +1,53 @@
 
-/*public abstract class Driver<T extends Car> {
+public class Driver<T extends Car> {
     private final String fullName;
-    private final String category;
+
     private final int drivingExperience;
     private final T car;
 
-    protected Driver(String fullName,String category,int drivingExperience,T car){
+    protected Driver(String fullName,int drivingExperience,T car){
         this.fullName=fullName;
-        this.category=category;
+
         this.drivingExperience=drivingExperience;
         this.car=car;
     }
 
     public void startMovement(){
-        System.out.println("Driver %s started moving", this.fullName);
+        System.out.println("Начал движение");
+        System.out.println(this.fullName);
         this.car.startMovement();
     }
+
     public void stopMovement(){
-        System.out.println("Driver %s stopped moving", this.fullName);
+        System.out.println("Остановился");
+        System.out.println(this.fullName);
         this.car.stopMovement();
     }
 
-}*/
+    public void relife(){
+        System.out.println("Запрваил авто");
+        System.out.println(this.fullName);
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public int getDrivingExperience() {
+        return drivingExperience;
+    }
+
+    public T getCar() {
+        return car;
+    }
+
+    @Override
+    public String toString() {
+        return "Driver{" +
+                "fullName='" + fullName + '\'' +
+                ", category='"  + '\'' +
+                ", drivingExperience=" + drivingExperience +
+                ", car=" + car +
+                '}';
+    }
+}
