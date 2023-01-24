@@ -1,3 +1,6 @@
+package Transport.Driver;
+
+import Transport.Car;
 
 public class Driver<T extends Car> {
     private final String fullName;
@@ -43,7 +46,7 @@ public class Driver<T extends Car> {
 
     @Override
     public String toString() {
-        return "Driver{" +
+        return "Transport.Driver.Transport.Driver{" +
                 "fullName='" + fullName + '\'' +
                 ", category='"  + '\'' +
                 ", drivingExperience=" + drivingExperience +

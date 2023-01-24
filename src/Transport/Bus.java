@@ -1,6 +1,10 @@
+package Transport;
+
+import Transport.Type.PassengerCapacityBus;
+
 import static sun.swing.MenuItemLayoutHelper.max;
 
-public class Bus extends Car implements Competing{
+public class Bus extends Car implements Competing {
 
     private final PassengerCapacityBus passengerCapacityBus;
 

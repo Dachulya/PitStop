@@ -1,3 +1,5 @@
+package Transport.Type;
+
 public enum PassengerCapacityBus {
     XS(0,10),
     S(0,25),

@@ -1,13 +1,19 @@
+package Transport;
+
+import Transport.Type.CarriageCapacity;
+
 import static sun.swing.MenuItemLayoutHelper.max;
 
-public class PassengerCars extends Car implements Competing{
+public class HeavyCar extends Car implements Competing{
+
     public static int[] SPISOK={13,34,2,1,45,67,8};
-    private final BodyType bodyType;
+    private final CarriageCapacity carriageCapacity;
     private boolean diagnostic;
+
     @Override
     public int pitStop() {
-        int randomNumm1 = (int)(Math.random()*10);
-        return randomNumm1;
+        int randomNumm = (int)(Math.random()*10);
+        return randomNumm;
     }
 
     @Override
@@ -19,13 +25,13 @@ public class PassengerCars extends Car implements Competing{
 
     @Override
     public int getMaxSpeed() {
-        int randomNummm = (int)(Math.random()*100);
-        return randomNummm;
+        int randomNum = (int)(Math.random()*100);
+        return randomNum;
     }
 
-    public PassengerCars(String brend, String model, float engineCapacity,BodyType bodyType, boolean diagnostic){
+    public HeavyCar(String brend, String model, float engineCapacity,CarriageCapacity carriageCapacity,boolean diagnostic){
         super(brend,model,engineCapacity);
-        this.bodyType=bodyType;
+        this.carriageCapacity=carriageCapacity;
         this.diagnostic=diagnostic;
     }
     @Override
@@ -38,18 +44,18 @@ public class PassengerCars extends Car implements Competing{
     }
 
     @Override
-    public void printType(){}
+    public void printType() {
+        System.out.println(carriageCapacity);
+    }
 
     @Override
     public void goDiagostic() {
-        if (diagnostic=true){
-            System.out.println(diagnostic);}
-        else {
-            throw new RuntimeException();
-        }
+        System.out.println(diagnostic);
     }
 
     public String toString(){
-        return "бренд и модель:"+getBrend()+"  "+getModel()+"  двигатель  "+getEngineCapacity()+bodyType/*+goDiagostic()*/;
+        return "бренд и модель:"+getBrend()+"  "+getModel()+"  двигатель  "+getEngineCapacity()+carriageCapacity+diagnostic;
     }
 }
+
+

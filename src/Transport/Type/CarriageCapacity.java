@@ -1,4 +1,4 @@
-
+package Transport.Type;
 
 public enum CarriageCapacity {
     N1(null,3.5f),

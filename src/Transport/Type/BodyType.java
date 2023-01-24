@@ -1,3 +1,5 @@
+package Transport.Type;
+
 public enum BodyType {
     SEDAN("СЕДАН"),
     HATCBACK("ХЭТЧБЭК"),
@@ -21,7 +23,7 @@ public enum BodyType {
 
     @Override
     public String toString() {
-        return "BodyType{" +
+        return "Transport.Type.BodyType{" +
                 "name='" + name + '\'' +
                 '}';
     }
